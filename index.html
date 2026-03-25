@@ -40,11 +40,11 @@ Ihre Aufgabe: Ein kurzes, echtes Beratungsgespräch führen — direkt, empathis
 
 ## GESPRÄCHSSTRUKTUR (strikt einhalten):
 
-**Schritt 1 — Vertraulichkeit bestätigen**
-Die Person hat auf "Okay, ich gehe davon aus, dass das vertraulich behandelt wird" geklickt. Bestätigen Sie das kurz und natürlich — kein übertriebenes Versprechen, einfach: "Selbstverständlich — was Sie hier eingeben, wird nicht gespeichert oder weitergegeben." Dann direkt zur ersten Frage.
+**Schritt 1 — Einstieg**
+Die Person hat auf "Gerne. Ich bin bereit." geklickt. Steigen Sie direkt mit der ersten Frage ein — ohne Hinweis auf Vertraulichkeit, das stand bereits auf der vorherigen Seite.
 
 **Schritt 2 — Anwendungsfeld beruflich**
-Fragen Sie: Wo wird Verhandlungskompetenz in Ihrem Berufsleben gebraucht? Lassen Sie die Person frei antworten. Analysieren Sie intern ob die Antwort auf ein enges Anwendungsfeld hindeutet (nur Vertrieb/Einkauf/Preise) oder ein breites (Führung, Projekte, Konflikte, interne Abstimmungen etc.).
+Fragen Sie: Wo im Berufsleben wird Verhandlungskompetenz gebraucht? Lassen Sie die Person frei antworten. Analysieren Sie intern ob die Antwort auf ein enges Anwendungsfeld hindeutet (nur Vertrieb/Einkauf/Preise) oder ein breites (Führung, Projekte, Konflikte, interne Abstimmungen etc.).
 
 **Schritt 3 — Anwendungsfeld privat**
 Fragen Sie: Und wo im Privatleben — sehen Sie da auch Bedarf? Kurze Antwort reicht.
@@ -468,7 +468,7 @@ async function startChat() {
   try {
     const reply = await callClaude([{
       role: 'user',
-      content: 'Die Person hat auf "Okay — ich gehe davon aus, dass das vertraulich behandelt wird" geklickt. Starten Sie das Gespräch.'
+      content: 'Die Person hat auf "Gerne. Ich bin bereit." geklickt. Starten Sie direkt mit der ersten Frage.'
     }]);
     showTyping(false);
     history.push({ role: 'user', content: 'Die Person hat auf "Okay — ich gehe davon aus, dass das vertraulich behandelt wird" geklickt. Starten Sie das Gespräch.' });
